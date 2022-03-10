@@ -10,4 +10,4 @@ Autoroom -> Creador de salas personalizado😁😆
 Autoclick para room 😁😆
 Link del Canal de Youtube : https://www.youtube.com/channel/UC0qEZ-RQtxzAvHkfrFlUM6A
 
-![image](https://user-images.githubusercontent.com/101313643/157601230-d4e9d3a0-a3ef-4089-a587-e0dfade56081.png)
+<center> ![image](https://user-images.githubusercontent.com/101313643/157601230-d4e9d3a0-a3ef-4089-a587-e0dfade56081.png) </center>
