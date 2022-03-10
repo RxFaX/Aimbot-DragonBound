@@ -1,0 +1,397 @@
+/* 
+ * Copyright (C) 2021, Alex(lnferno). <xander.scorpio@gmail.com>
+ * This file is part of DragonBotPro.
+ * DragonBotPro is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation, either version 3 of the License, or(at your option) any later version.
+ * 
+ * DragonBotPro is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+ * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License along with DragonBotPro. If not, see http://www.gnu.org/licenses/.
+ */
+ body.bot_disabled .mark {
+    opacity: 0 !important
+}
+
+#powerMarkArea .mark {
+    -webkit-transition:
+    all .3s;
+    position: absolute;
+    height: 45%;
+}
+
+#powerMarkArea .mark {
+    top:0;	
+    background:black;	
+    width:1px; 
+    opacity:0; 
+    border-left:1px solid rgba(0,255,0,1);
+    -webkit-transform: translate(-2px,0); z-index:3
+}
+
+#powerMarkArea .mark b {
+    background:black;	
+    /* font-family: cursive; */
+    font-size:10px; 
+    line-height:10px; 
+    height:10px; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    display:inline-block; 
+    color:#fff; 
+    text-shadow:1px 1px 0px #000; 
+    white-space: nowrap;
+}
+
+#powerMarkArea .mark b span {
+    -webkit-transition:all .75s ease-in-out;
+}
+
+#powerMarkArea .mark.on {
+    opacity: 1
+}
+
+#powerMarkArea .mark.markhide {
+    opacity: 0
+}
+
+.codex_recalibrate_box {
+    opacity: .3;
+    transition: opacity .5s;
+    position: absolute;
+    bottom: 117px;
+    left: 330px;
+    background: rgba(16, 34, 43, .85);
+    padding: 10px 7px;
+    border: 1px solid #fff;
+    display: flex;
+    border-radius: 3.5px;
+    cursor: pointer
+}
+
+.codex_recalibrate_box:hover {
+    opacity: 1;
+    position: absolute;
+    bottom: 117px;
+    left: 330px;
+    background: rgba(16, 34, 43, .85);
+    padding: 10px 7px;
+    border: 1px solid #fff;
+    display: flex;
+    border-radius: 4px
+}
+
+#codex_recalibrate_reset {
+    position: absolute;
+    left: 4px;
+    top: -30px;
+    font-family: cursive;
+    text-decoration: none;
+    font-weight: 15;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 3px;
+    border: 0.5px solid white;
+    cursor: pointer;
+}
+
+#codex_recalibrate_reset:hover {
+    text-decoration: none;
+    position: absolute;
+    left: 4px;
+    top: -30px;
+    font-family: cursive;
+    font-weight: 15;
+    font-size: 15px;
+    color: #C8D1D1;
+    background-color: hsla(347,100%,50%, 0.63);
+    border-radius: 3px;
+    border: 0.5px solid white;
+    cursor: pointer;
+}
+
+#codex_recalibrate {
+    position: relative;
+	top: 10px;
+	left: 15px;
+    display:flex;
+    -webkit-appearance: none;
+    margin: auto;
+    height:5px;
+}
+
+#codex_recalibrate_input {
+    width: 40px;
+    font-family: cursive;
+    height: 15px;
+    border: 0;
+    margin-left: 10px;
+    border-radius: 5px;
+    background: #484C4A;
+    color: white;
+    text-align: center;
+    font-size:20px;
+}
+
+#codex_recalibrate_input:focus {
+    outline: none;
+}
+
+#codex_recalibrate::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.5s;
+    border-radius: 50px;
+}
+
+#codex_recalibrate::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 2px solid #15ff00;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #484C4A;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6px;
+}
+
+#codex_recalibrate:focus {
+    outline: none;
+}
+
+#codex_recalibrate_sum {
+    width: 40px;
+    height: 40px;
+position: absolute;
+left: 210px;
+top: 0px;
+text-decoration: none;
+/* font-weight: 300; */
+font-size: 20px;
+color: #ffffff;
+background-color: rgba(0, 0, 0, 0.45);
+border-radius: 3px;
+border: 0.5px solid white;
+cursor: pointer;
+}
+
+#codex_recalibrate_rest {
+    width: 40px;
+    height: 40px;
+position: absolute;
+left: -50px;
+top: 0px;
+text-decoration: none;
+/* font-weight: 300; */
+font-size: 20px;
+color: #ffffff;
+background-color: rgba(0, 0, 0, 0.45);
+border-radius: 3px;
+border: 0.5px solid white;
+cursor: pointer;
+}
+
+#OptionsTextbt,
+#abrs,
+#ambotswitch {
+    display: none
+}
+
+#OptionsDialog.enabled {
+    height: 257px
+}
+
+#OptionsDialog.enabled #OptionsLeave,
+#OptionsDialog.enabled #OptionsOK {
+    top: 230px
+}
+
+#OptionsDialog.enabled #OptionsTextbt {
+    display: inline-block
+}
+
+#OptionsDialog.enabled #aimbotswitch {
+    display: inline-block
+}
+
+#OptionsDialog.enabled #abrs {
+    display: block
+}
+
+.panel {
+       padding: 3px;
+    border: 2px solid black;
+    color: #ff0;
+    position: absolute;background-image: url(https://i.pinimg.com/originals/8f/d4/29/8fd429e6f62ec2bb69e16314f81a2cc4.gif);width:200px;height:auto;z-index:9999999;color:rgb(252, 252, 252);display:grid;grid-template-columns:100%;grid-template-rows:20px auto}.panel .title{font-size:16px;padding:3px;text-align:center}.panel .body{    margin-top: 6px;height:auto;font-size:9px;grid-auto-rows:auto;margin-bottom:5px}
+    background: #0400ff;
+    width: 200px;
+    height: auto;
+    z-index: 9999999;
+    color: #ff0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20px auto
+}
+
+.panel .title {
+    font-size: 16px;
+    padding: 3px;
+    text-align: center
+}
+
+.panel .body {
+    margin-top: 6px;
+    height: auto;
+    font-size: 9px;
+    grid-auto-rows: auto;
+    margin-bottom: 5px
+}
+
+.panel .option{display: grid;
+    grid-template-columns: auto 30%;
+    grid-template-rows: 14px auto;margin:.5em;padding-left:3px}
+     #mainMenu{
+    top: 9px; left: 11px;
+    background: rgba(255,0,255,0.3);
+    border: 1px solid white;
+    position:absolute ;background-image: url(https://img1.picmix.com/output/stamp/normal/1/8/3/6/1796381_e2144.gif);width:200px;height:auto;z-index:9999999;color:rgb(252, 252, 252);display:grid;grid-template-columns:100%;grid-template-rows:20px auto}.panel .title{font-size:16px;padding:3px;text-align:center}.panel .body{    margin-top: 6px;height:auto;font-size:9px;grid-auto-rows:auto;margin-bottom:5px}
+    top: 60px;
+    height: 450px;
+    width: 220px;
+    display:flex;
+    flex-direction: column;
+    border-radius: 3.5px;
+}
+#controlMenu{
+    right: 22px;
+    top: 60px;
+    background: rgba(255,0,255,0.3);
+}
+.option input{
+    position: relative;
+    top: -4px;
+}
+
+
+.plane{
+    position: absolute;
+}
+.planeAimbot{
+    position: absolute;
+}
+.pointer_aimbot{
+    background: rgba(255,0,255,0.3);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px black solid;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+};
+
+#planeThor{
+    position: absolute;
+}
+.thorlaser{
+    position: absolute;
+    top: -15px;
+    width: 500px;
+    height: 30px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAYAAADtlXTHAAAAB3RJTUUH3gQLDzQv3cZ/rQAAAAlwSFlzAAAnEAAAJxABlGlRGQAAAARnQU1BAACxjwv8YQUAAABKSURBVHjaY2Bg+M/LxMXFwAkiuJg4OSEsKAHkciFxsYmBdDBcuvT/ChMDAwMTs6hogyLT9+8M35m+fYMRQO4PJC42MTgXaMh/KQBXYCrEWIxApwAAAABJRU5ErkJggg==) repeat-x;
+}
+
+.point{
+    border: 3px solid #38ff1b;
+    height: 200px;
+    width: 200px;
+    left: -100px;
+    top: -100px;
+    border-style: dashed;
+    position: absolute;
+    border-radius: 100%;
+}
+.frog{
+    border: 3px solid #38ff1b;
+    height: 200px;
+    width: 200px;
+    left: -100px;
+    top: -100px;
+    border-style: dashed;
+    position: absolute;
+    border-radius: 100%;
+}
+.info{
+    left: -60.5px;
+    background: rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+    position: absolute;
+    width: 121px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 12px;
+    min-width: 121px;
+    max-width: 121px;
+    top: 38px;
+    padding: 3px;
+    color: #ffffff;
+    border-radius: 3px;
+    border: 0.5px solid white
+}
+
+/* ---------- Animation ---------- */
+.rotate_frog_r {
+    -webkit-animation: spin-right 20s linear infinite;
+    animation: spin-right 20s linear infinite;
+}
+.rotate_frog_l {
+    -webkit-animation: spin-left 20s linear infinite;
+    animation: spin-left 20s linear infinite;
+}
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+#game_info{   
+    display: none; 
+    top: 2px;
+    color: yellow;
+    background: blue;
+    width: 172px;
+    height: auto;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    font-size: 12px;
+    padding: 2px;
+    background: rgba(255,0,255,0.3);
+    text-align: center;
+    border-radius: 4px;
+    border: 0.5px solid white;
+}
+.arrow_right_up{transform: scale(0.2) scaleX(-1) rotate(20deg);top: 86px}
+.arrow_right_down{transform: scale(0.2) scaleX(1) rotate(-40deg);top: -126px;left: -94px}
+.arrow_left_up{transform: scale(0.2) scaleX(-1) rotate(192deg);top: 64px}
+.arrow_left_down{transform: scale(0.2) scaleX(1) rotate(157deg);top: -147px;left: -94px}
+.arrow_content{background: url(https://www.pitzer.edu/information-technology/wp-content/uploads/sites/31/2019/07/arrow.png) no-repeat;position: absolute;width: 300px;opacity: 0.8;height: 300px}
